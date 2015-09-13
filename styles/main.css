@@ -1,0 +1,229 @@
+body {
+	font-size: 12px;
+}
+
+.dropdown{
+	background-color: white;
+	width: 100%;
+	height: 1334px;
+}
+
+/*=================LOGO=================*/
+
+.primary-logo {
+	text-align: center;
+	max-width: 70%;
+	height: auto;
+	padding-top: 5%;
+	padding-left: 15%;
+	padding-bottom: 5%;
+}
+
+/*=================LOGO=================*/
+
+
+
+/*=================NEW PATH MENU=================*/
+
+.new-path-menu {
+	padding-top: 5%;
+	width: 100%;
+	overflow: scroll;
+}
+
+.new-path-title {
+	font-size: 3rem;
+	font-family: Bitter, Georgia, serif;
+	font-weight: bold;
+	letter-spacing: 1rem;
+	text-align: center;
+	margin-bottom: -10px;
+}
+
+.search-box {
+	width: 86%;
+	height: 40px;
+	margin: 2% 4%;
+	border: solid .5rem #d1d2d4;
+	padding: 3%;
+}
+
+.search-box-open {
+	width: 86%;
+	height: 38%;
+	margin: 2% 4%;
+	border: solid .5rem #d1d2d4;
+	padding: 3%;
+}
+
+.friend-box-open {
+	width: 86%;
+	height: 10%;
+	margin: 2% 4%;
+	border: solid .5rem #d1d2d4;
+	padding: 3%;
+}
+
+.info-box-open {
+	width: 86%;
+	height: 60%;
+	margin: 2% 4%;
+	border: solid .5rem #d1d2d4;
+	padding: 1% 3%;
+	overflow: scroll;
+}
+
+.search-type {
+	font-size: 2.5rem;
+	font-family: Bitter, Georgia, serif;
+}
+
+.date-styling{
+	font-size: 2.5rem;
+	font-family: Bitter, Georgia, serif;
+	color: #6d6e71;
+}
+
+.paragraph-styling{
+	font-size: 2.5rem;
+	font-family: Bitter, Georgia, serif;
+	color: #6d6e71;
+}
+
+.my-path-buttons{
+	text-align: center;
+	display: inline-block;
+	width: 24%;
+	font-size: 2.5rem;
+	font-family: Bitter, Georgia, serif;
+	color: #f79328;
+	text-decoration: underline;
+}
+
+.delete-icon {
+	max-width: 8%;
+	float: right;
+	vertical-align: middle;
+	margin-top: -1.5%;
+}
+
+
+/*=================NEW PATH MENU=================*/
+
+/*=================CATEGORY SELECTOR=================*/
+
+.category-selector {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 5% 0%;
+
+}
+
+.category-type {
+	text-align: center;
+	font-size: 2rem;
+	font-family: Bitter, Georgia, serif;
+	}
+
+.category-icons {
+	margin: 2% 0%;
+}
+.icon {
+	margin: 0% 1%;
+	max-width: 16%;
+	height: auto;
+}
+
+/*=================CATEGORY SELECTOR=================*/
+
+
+/*=================WANDER BUTTON=================*/
+
+.wander-button {
+	width: 35%;
+	height: 6%;
+	background-color: #f79429;
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0% 32.5%;
+}
+
+.wander-button-text {
+	max-width: 70%;
+	height: auto;
+	margin-top: 5%;
+}
+
+/*=================WANDER BUTTON=================*/
+
+
+/*=================LOWER NAV=================*/
+
+.lower-nav {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	display: inline-block;
+	position: fixed;
+
+}
+
+.lower-nav-button{
+	width: 23%;
+	height: auto;
+	text-align: center;
+	display: inline-block;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	margin-left: 1.5%;
+	text-decoration: none;
+}
+
+.lower-nav-icon {
+	text-align: center;
+	padding: 10%;
+	max-width: 50%;
+	height: auto;
+
+}
+
+.lower-nav-icon-my-path {
+	text-align: center;
+	padding: 10%;
+	max-width: 60%;
+	height: auto;
+
+}
+
+.lower-nav-text {
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: Bitter, Georgia, serif;
+	text-decoration: none;
+	color: black;
+}
+
+/*=================LOWER NAV=================*/
+
+/*=================DROPDOWN ARROW=================*/
+
+.dropdown-arrow-block {
+	width: 100%;
+	height: auto;
+
+}
+
+.dropdown-arrow {
+	max-width: 100%
+}
+
+
+
+
+
+
+
+
