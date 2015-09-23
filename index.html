@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Wander App.</title>
@@ -21,10 +21,10 @@
 			<div class="new-path-menu">
 				<h1 class="new-path-title">NEW PATH</h1>
 					<div class="search-box">
-						<span class="search-type">START</span>
+						<input type="text" class="search-type js-start" placeholder="START" value="110 5th ave nyc">
 					</div>
 					<div class="search-box">
-						<span class="search-type">DESTINATION</span>
+						<input type="text" class="search-type js-end" placeholder="DESTINATION" value="34-47 42nd st nyc">
 					</div>
 			</div>
 
@@ -35,15 +35,15 @@
 			<div class="category-selector">
 				<span class="category-type">SELECT CATEGORIES</span>
 				<div class="category-icons">
-					<img src="assets/icons/off-dining.png" class="icon">
-					<img src="assets/icons/off-nightlife.png" class="icon">
-					<img src="assets/icons/off-cafe.png" class="icon">
-					<img src="assets/icons/off-shopping.png" class="icon">
-					<img src="assets/icons/off-lodging.png" class="icon">
-					<img src="assets/icons/off-culture.png" class="icon">
-					<img src="assets/icons/off-outdoors.png" class="icon">
-					<img src="assets/icons/off-exercise.png" class="icon">
-					<img src="assets/icons/off-attraction.png" class="icon">
+					<img src="assets/ico/off-dining.png" class="icon js-icon" data-type="dining">
+					<img src="assets/ico/off-nightlife.png" class="icon js-icon" data-type="nightlife">
+					<img src="assets/ico/off-cafe.png" class="icon js-icon" data-type="cafe">
+					<img src="assets/ico/off-shopping.png" class="icon js-icon" data-type="shopping">
+					<img src="assets/ico/off-lodging.png" class="icon js-icon" data-type="lodging">
+					<img src="assets/ico/off-culture.png" class="icon js-icon" data-type="culture">
+					<img src="assets/ico/off-outdoors.png" class="icon js-icon" data-type="outdoors">
+					<img src="assets/ico/off-exercise.png" class="icon js-icon" data-type="exercise">
+					<img src="assets/ico/off-attraction.png" class="icon js-icon" data-type="attraction">
 
 				</div>
 			</div>
@@ -52,7 +52,7 @@
 
 <!-- =============WANDER BUTTON============= /-->
 	
-			<div class="wander-button">
+			<div class="wander-button js-submit">
 				<img src="assets/wander-white-submit.png" class="wander-button-text">
 			</div>
 
@@ -94,6 +94,9 @@
 
 		<div class="map-bkgd">
 		</div>
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    	<script src='javascript/main.js'></script>
 
 	</body>
 </html>
