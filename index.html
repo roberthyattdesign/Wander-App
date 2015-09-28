@@ -30,6 +30,11 @@
 
 <!-- =============NEW PATH MENU============= /-->
 
+<!-- =============WANDER BUTTON============= /-->
+	
+			<div class="wander-button js-submit">
+				<img src="assets/wander-white-submit.png" class="wander-button-text">
+			</div>
 <!-- =============CATEGORY SELECTOR============= /-->
 
 			<div class="category-selector">
@@ -50,11 +55,6 @@
 
 <!-- =============CATEGORY SELECTOR============= /-->
 
-<!-- =============WANDER BUTTON============= /-->
-	
-			<div class="wander-button js-submit">
-				<img src="assets/wander-white-submit.png" class="wander-button-text">
-			</div>
 
 <!-- =============WANDER BUTTON============= /-->
 
@@ -92,11 +92,18 @@
 
 		</div>
 
-		<div class="map-bkgd">
+		<div id="map-bkgd" style="height: 1500px;">
 		</div>
 
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
-    	<script src='javascript/main.js'></script>
+    	<!-- <script src='javascript/main.js'></script> -->
+    	<!-- 
+	    	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+	    	<script src="https://maps.googleapis.com/maps-api-v3/api/js/22/6/main.js"></script>
+	    	<script src="https://maps.googleapis.com/maps-api-v3/api/js/22/6/places.js"></script>
+    	-->
+    	<script src="http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=initialize&libraries=places"></script>
+    	<script src="javascript/main2.js"></script>
 
 	</body>
 </html>

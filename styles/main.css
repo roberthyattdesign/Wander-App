@@ -230,6 +230,15 @@ body {
 	height: 1500px;
 }
 
+.info-container {
+	width: 84%;
+	height: 80%;
+	margin: 2% 4%;
+	border: solid .5rem #f79429;
+	padding: 3%;
+
+}
+
 
 
 

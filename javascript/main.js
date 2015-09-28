@@ -67,6 +67,24 @@ GoogleAPIs._getMapProps = function _getMapProps( propertyObject ) {
 	}, propertyObject);
 }
 
+GoogleAPIs.searchPlace = function searchPlace( map, reqObj ) {
+	var d = $.Deferred();
+
+	var request = reqObj;
+
+	var service = new google.maps.places.PlacesService( map );
+    service.nearbySearch(request, function(results, status) {
+    	if (status == google.maps.places.PlacesServiceStatus.OK) {
+    		d.resolve( results, map );
+    	}
+    	else {
+    		d.reject('No results');
+    	}
+    });
+
+    return d.promise();
+}
+
 GoogleAPIs.initMap = function initMap() {
 	this.isMapCodeLoaded = true;
 }
@@ -84,8 +102,9 @@ GoogleAPIs.getMarker = function getMarker( latLng, map ) {
 }
 
 GoogleAPIs.setKey('AIzaSyADiBgS-30DiK0lJjdLbhaUlit6o6OqgQc');
+// AIzaSyA7Yv-YRobudtv50Mihfz6Yv9HeOw24WTU
 GoogleAPIs.
-	loadScript('http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=GoogleAPIs.initMap');
+	loadScript('http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=GoogleAPIs.initMap&libraries=places');
 //http://jsfiddle.net/doktormolle/7cu2f/
 
 function toggleIcon(){
@@ -183,6 +202,30 @@ function submitSearch(){
 			map: currMap
 		});
 		// load map
+
+		return GoogleAPIs.searchPlace( currMap, {
+			// bounds: new google.maps.LatLngBounds(
+			// 	new google.maps.LatLng( startLatLng.lat, startLatLng.lng ),
+			// 	new google.maps.LatLng( endLatLng.lat, endLatLng.lng )
+			// ),
+			location: new google.maps.LatLng( endLatLng.lat, endLatLng.lng ),
+			radius: 5000
+			// types: ['store']
+		});
+	})
+	.then(function(results, map) {
+		console.log( results );
+
+		// GoogleAPIs.getMarker(startLatLng, currMap )
+
+		for( var i = 0; i < results.length; i++ ) {
+			var currentResult = results[ i ];
+			
+			GoogleAPIs.getMarker({
+				lat: currentResult.geometry.location.G,
+				lng: currentResult.geometry.location.K
+			}, map );
+		}
 	});
 	// load pins
 }
